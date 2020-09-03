@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 
   <meta charset="utf-8">
@@ -16,69 +15,23 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
+  <link href="css/calendar.css" rel="stylesheet">
+
+  
   <link rel="icon" href="images/icon.ico" />
 
 </head>
 
-<body>
 
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">EasyStudio</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item" href="404.html">404</a>
-              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body  style="background-color:black;color:white;">
+<div style="text-align:center;">
+  <a href="index.php"><img class="img-fluid rounded mb-4" src="images/logo.jpg" alt="studio enregistrement"></a>
 
+  </div>
+  <?php
+  if(!isset($_GET['studio'])){
+
+    ?>
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -88,21 +41,21 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background: url(images/studio3.jpg)">
+        <div onClick="window.location.href='?studio=1';" class="carousel-item active" style="background: url(images/studio2.jpg);cursor:pointer">
           <div class="carousel-caption d-none d-md-block">
             <h3>Studio 1</h3>
             <p>Profitez de nos studios neufs à la pointe de la technologie.</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(images/studio2.jpg)">
+        <div onClick="window.location.href='?studio=2';" class="carousel-item" style="background-image: url(images/studio2.jpg);cursor:pointer">
           <div class="carousel-caption d-none d-md-block">
             <h3>Studio 2</h3>
             <p>Profitez de nos studios neufs à la pointe de la technologie.</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(images/studio1.jpg)">
+        <div onClick="window.location.href='?studio=3';" class="carousel-item" style="background-image: url(images/studio1.jpg);cursor:pointer">
           <div class="carousel-caption d-none d-md-block">
             <h3>Studio 3</h3>
             <p>Profitez de nos studios neufs à la pointe de la technologie.</p>
@@ -120,20 +73,16 @@
     </div>
   </header>
 
+  <br>
+
    <!-- Page Content -->
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">About
-      <small>us</small>
+    <h1 class="mt-4 mb-3">A propos
+      <small>de nous</small>
     </h1>
 
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">About</li>
-    </ol>
 
     <!-- Intro Content -->
     <div class="row">
@@ -151,7 +100,6 @@
 
   </br>
 </br>
-
     <!-- Team Members -->
     <h2>Notre Team</h2>
 
@@ -202,7 +150,7 @@
 </br>
 
     <!-- Our Customers -->
-    <h2>Our Customers</h2>
+    <h2>Nos Artistes</h2>
     <div class="row">
       <div class="col-lg-2 col-sm-4 mb-4">
         <img class="img-fluid" src="images/ninho.jpg" alt="">
@@ -228,8 +176,23 @@
   </div>
   <!-- /.container -->
 
+  <?php } else { ?>
+  <div style="text-align:center">
+    <p class="calendar-preview"> <iframe id="calp_1726892894" style="width: 1140px; height: 267px; overflow: visible;" class="calprev_iframe caltype_4" scrolling="no" frameborder="0" src="https://www.planyo.com/embed-calendar.php?resource_id=165988&amp;calendar=34982&amp;style=week-grid&amp;days=7&amp;feedback_url=https%3A%2F%2Fwww.planyo.com%2Fbooking.php%3Fcalendar%3D34982&amp;modver=2.7&amp;background=none&amp;custom-language=EN&amp;ifr=calp_1726892894&amp;usage=resform&amp;"></iframe> </p>
+      <p class="resource-footer">
+        <a href="https://www.planyo.com/booking.php?calendar=34982&amp;feedback_url=https%3A%2F%2Fwww.planyo.com%2Fbooking.php%3Fcalendar%3D34982&amp;mode=reserve&amp;planyo_lang=en&amp;prefill=true&amp;resource_id=165988&amp;" role="button" class="btn btn-primary btn-lg">Make reservation</a>
+    </p>
+    </div>
+
+
+  <?php } ?>
+
+
+
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-4 bg-dark text-white-50">
+
+
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Easy Studio 2020</p>
     </div>
