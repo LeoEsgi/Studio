@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<!-- login planyo = EzStud  ; mdp = AGS1587965 !-->
 <head>
 
   <meta charset="utf-8">
@@ -25,11 +27,13 @@
 
 <body  style="background-color:black;color:white;">
 <div style="text-align:center;">
-  <a href="index.php"><img class="img-fluid rounded mb-4" src="images/logo.jpg" alt="studio enregistrement"></a>
-
-  </div>
+  <a href="index.php">
+  <img class="img-fluid rounded mb-4" src="images/logo.jpg" alt="studio enregistrement">
+  </a>
+</div>
   <?php
   if(!isset($_GET['studio'])){
+	  
 
     ?>
   <header>
@@ -110,7 +114,7 @@
           <div class="card-body">
             <h4 class="card-title">Ingé 1</h4>
             <h6 class="card-subtitle mb-2 text-muted">Ingénieur du son</h6>
-            <p class="card-text">Ingé 1 est un ingénieur du son professionel avec beaucoup d'expèrience</p>
+            <p class="card-text">Ingé 1 est un ingénieur du son professionel avec beaucoup d'experience</p>
           </div>
           <div class="card-footer">
             <a href="#">Ingé1@hotmail.com</a>
@@ -123,7 +127,7 @@
           <div class="card-body">
             <h4 class="card-title">Ingé 2</h4>
             <h6 class="card-subtitle mb-2 text-muted">Ingénieur du son</h6>
-            <p class="card-text">Ingé 2 est un ingénieur du son professionel avec beaucoup d'expèrience</p>
+            <p class="card-text">Ingé 2 est un ingénieur du son professionel avec beaucoup d'experience</p>
           </div>
           <div class="card-footer">
             <a href="#">Ingé2@hotmail.com</a>
@@ -136,7 +140,7 @@
           <div class="card-body">
             <h4 class="card-title">Ingé 3</h4>
             <h6 class="card-subtitle mb-2 text-muted">Ingénieur du son</h6>
-            <p class="card-text">Ingé 3 est un ingénieur du son professionel avec beaucoup d'expèrience</p>
+            <p class="card-text">Ingé 3 est un ingénieur du son professionel avec beaucoup d'experience</p>
           </div>
           <div class="card-footer">
             <a href="#">Ingé3@hotmail.com</a>
@@ -153,22 +157,22 @@
     <h2>Nos Artistes</h2>
     <div class="row">
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="images/ninho.jpg" alt="">
+        <img class="img-fluid" src="images/ninho.jpg" alt="ninho">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="images/niska.png" alt="">
+        <img class="img-fluid" src="images/niska.png" alt="niska">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="images/booba.jpg" alt="">
+        <img class="img-fluid" src="images/booba.jpg" alt="booba">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="images/kalash.png" alt="">
+        <img class="img-fluid" src="images/kalash.png" alt="kalash">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="images/plk.png" alt="">
+        <img class="img-fluid" src="images/plk.png" alt="plk">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="images/vald.jpg" alt="">
+        <img class="img-fluid" src="images/vald.jpg" alt="vald">
       </div>
     </div>
     <!-- /.row -->
@@ -176,13 +180,17 @@
   </div>
   <!-- /.container -->
 
-  <?php } else { ?>
+  <?php } else { 
+  
+  $studio = $_GET['studio'];
+  
+  ?>
   <div style="text-align:center">
     <p class="calendar-preview"> <iframe id="calp_1726892894" style="width: 1140px; height: 267px; overflow: visible;" class="calprev_iframe caltype_4" scrolling="no" frameborder="0" src="https://www.planyo.com/embed-calendar.php?resource_id=165988&amp;calendar=34982&amp;style=week-grid&amp;days=7&amp;feedback_url=https%3A%2F%2Fwww.planyo.com%2Fbooking.php%3Fcalendar%3D34982&amp;modver=2.7&amp;background=none&amp;custom-language=EN&amp;ifr=calp_1726892894&amp;usage=resform&amp;"></iframe> </p>
       <p class="resource-footer">
         <a href="https://www.planyo.com/booking.php?calendar=34982&amp;feedback_url=https%3A%2F%2Fwww.planyo.com%2Fbooking.php%3Fcalendar%3D34982&amp;mode=reserve&amp;planyo_lang=en&amp;prefill=true&amp;resource_id=165988&amp;" role="button" class="btn btn-primary btn-lg">Make reservation</a>
     </p>
-    </div>
+  </div>
 
 
   <?php } ?>
@@ -204,5 +212,6 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
+<script type='text/javascript' src='https://www.planyo.com/as.js'></script>
+<iframe id='calp_2498424361' style='width:640px;height:641px;' class='calprev_iframe caltype_4' scrolling='no' frameborder='0' src='https://www.planyo.com/embed-calendar.php?resource_id=178214&calendar=56046&style=week-grid&days=21&custom-language=FR&ifr=calp_2498424361&find_first_av=1'></iframe>
 </html>
